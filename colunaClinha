@@ -1,0 +1,36 @@
+algoritmo " 4x3 mostrr dados solicitado"
+// 6. Ler uma matriz 4X3 real. Depois mostre qual é o elemento armazenado
+// em uma linha e coluna C fornecidos pelo usuário;
+// Autor : TH
+// Data : 10/10
+// Seção de Declarações
+var
+vet4x3:vetor[1..4,1..3] de real
+linha,coluna,i,j:inteiro
+inicio
+// Seção de Comandos
+para i de 1 ate 4 faca
+ 	para j de 1 ate 3 faca
+      	escreva("Digite os numeros: [",i, " + ", j, " ] ")
+      	leia(vet4x3[i,j])
+ 	fimpara
+fimpara
+escreva(" ")
+escreval(" ----------  MATRIZ  4 X 3 ----------")
+para i de 1 ate 4 faca
+ 	para j de 1 ate 3 faca
+      	escreva(vet4x3[i,j]," ")
+ 	fimpara
+      	escreval(" ")
+fimpara
+escreval(" --------------------")
+escreva("Qual linha você quer ver? ")
+leia(linha)
+escreva("Qual coluna quer ver? ")
+leia(coluna)
+para i de linha ate linha faca
+ 	para j de coluna ate coluna faca
+escreval("O numéro armazenado na linha ",linha, " e na coluna ",coluna, " é: ", vet4x3[linha,coluna])
+  	fimpara
+fimpara
+fimalgoritmo
